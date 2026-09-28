@@ -2,6 +2,7 @@ import sys
 from stats import total_words
 from stats import get_num_chars
 from stats import chars_dict_to_sorted_list
+#imports from stats.py to main.py
 
 def get_book_text(text):
     with open(text) as f:
@@ -16,6 +17,7 @@ def main():
     book_path = sys.argv[1]
     text = get_book_text(book_path)
     count = total_words(text)
+    
     
     
     character_counts = get_num_chars(text)
